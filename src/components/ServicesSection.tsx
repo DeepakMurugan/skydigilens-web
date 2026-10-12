@@ -130,7 +130,7 @@ const ServiceCard = ({ service, index }: { service: Service; index: number }) =>
           </p>
 
           <span className="inline-flex items-center gap-2 text-sm font-semibold text-sky-300 transition-all group-hover:gap-3">
-            Explore service <ArrowRight size={16} />
+            Explore our service <ArrowRight size={16} />
           </span>
         </div>
       </div>
