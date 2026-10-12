@@ -6,8 +6,8 @@ const videos = [
   {
     src: "https://www.youtube.com/embed/CunMaIE3g9Q?autoplay=1&mute=1&loop=1&playlist=CunMaIE3g9Q&controls=0&modestbranding=1",
     id: "CunMaIE3g9Q",
-    title: "Construction Monitoring",
-    location: "Telangana",
+    title: "Construction Monitoring ",
+    location: "Hyderabad",
     category: "Construction",
   },
   {
