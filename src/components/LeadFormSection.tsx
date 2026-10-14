@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 import {
   ArrowRight,
   CalendarDays,
@@ -23,6 +24,10 @@ const services = [
   "Other",
 ];
 
+const emailServiceId = "service_2k2qrfx";
+const emailTemplateId = "template_mf3ntek";
+const emailPublicKey = "ldX0CnqDPhwjlrLy6";
+
 const LeadFormSection = () => {
   const [form, setForm] = useState({
     name: "",
@@ -35,7 +40,7 @@ const LeadFormSection = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (
@@ -50,13 +55,15 @@ const LeadFormSection = () => {
     }
 
     setLoading(true);
-    const subject = encodeURIComponent(`SkyDigiLens enquiry: ${form.service}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\nPreferred date: ${form.date}\n\nProject details:\n${form.message || "Not provided"}`
-    );
-    window.location.href = `mailto:hello@skydigilens.in?subject=${subject}&body=${body}`;
-    toast.info("Your email app will open with the enquiry ready to send.");
-    setLoading(false);
+    try {
+      await emailjs.send(emailServiceId, emailTemplateId, form, emailPublicKey);
+      toast.success("Your enquiry has been sent successfully.");
+    } catch (error) {
+      console.error("Failed to send enquiry with EmailJS:", error);
+      toast.error("Could not send your enquiry. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -219,11 +226,11 @@ const LeadFormSection = () => {
             className="group flex w-full items-center justify-center gap-2 rounded-xl bg-slate-950 py-3.5 font-semibold text-white transition hover:bg-sky-700"
           >
             <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
-            {loading ? "Preparing enquiry..." : "Prepare Email Enquiry"}
+            {loading ? "Sending enquiry..." : "Send Enquiry"}
           </button>
 
           <p className="text-center text-xs leading-5 text-slate-500">
-            Your email app will open so you can review and send your enquiry to hello@skydigilens.in.
+            Your enquiry will be sent to skydigilens
           </p>
         </motion.form>
       </div>
