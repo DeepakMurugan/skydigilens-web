@@ -18,9 +18,9 @@ const videos = [
   },
   {
     src: vd1,
-    title: "Construction Drone Footage",
+    title: " Drone Footage",
     location: "SkyDigiLens",
-    category: "Construction",
+    category: "cinematic",
   },
   {
     src: vd2,
@@ -42,7 +42,7 @@ const videos = [
   },
 ];
 
-const categories = ["All", "Wedding", "Construction", "Aerial"];
+const categories = ["All", "Wedding", "Cinematic", "Aerial"];
 
 const VideoShowcaseSection = () => {
   const [activeIdx, setActiveIdx] = useState(0);
