@@ -39,9 +39,9 @@ const Index = () => {
       url: window.location.origin + "/",
       currenciesAccepted: "INR",
       image: [
-        window.location.origin + "/skydigilens-logo-crop.png"
+        window.location.origin + "/skydigilens-logo.jpeg"
       ],
-      logo: window.location.origin + "/skydigilens-logo-crop.png",
+      logo: window.location.origin + "/skydigilens-logo.jpeg",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Hyderabad",

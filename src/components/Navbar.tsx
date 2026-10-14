@@ -41,11 +41,11 @@ const serviceLinks = [
     href: "/services#event-photography",
     desc: "Aerial event cinematography",
   },
-  {
-    label: "Power Utility Inspection",
-    href: "/services#power-utility-inspection",
-    desc: "Pole and line visual inspections",
-  },
+  // {
+  //   label: "Power Utility Inspection",
+  //   href: "/services#power-utility-inspection",
+  //   desc: "Pole and line visual inspections",
+  // },
   {
     label: "Luxury & FPV Drone Service",
     href: "/services#promotional",
@@ -117,11 +117,11 @@ const Navbar = () => {
           {/* LOGO */}
           <a href="/" className="flex shrink-0 items-center" aria-label="SkyDigiLens home">
             <img
-              src="/skydigilens-logo-crop.png"
+              src="/skydigilens-logo.png"
               alt="SkyDigiLens"
-              width={104}
-              height={82}
-              className="h-12 w-[62px] rounded-md object-cover sm:h-14 sm:w-[72px] lg:h-[68px] lg:w-[86px]"
+              width={200}
+              height={80}
+              className="h-10 w-[120px] object-contain sm:h-12 sm:w-[150px] lg:h-14 lg:w-[190px]"
             />
           </a>
 

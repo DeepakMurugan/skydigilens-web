@@ -33,7 +33,7 @@ const TrustSection = () => {
 
   return (
 <section
-  className="relative py-16 sm:py-20 lg:py-24 bg-white text-black overflow-hidden"
+  className="relative py-16 sm:py-20 lg:py-20 bg-white text-black overflow-hidden"
   ref={ref}
 >
   {/* 🔵 Gradient */}
@@ -50,7 +50,7 @@ const TrustSection = () => {
       animate={inView ? { opacity: 1, y: 0 } : {}}
       className="text-center mb-12 sm:mb-16"
     >
-      <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+      <h2 className="text-2xl sm:text-3xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
         Aerial Expertise Across{" "}
         <span className="text-[#0284C7]">
           Telangana & Andhra Pradesh
@@ -63,29 +63,15 @@ const TrustSection = () => {
     </motion.div>
 
     {/* 📊 Counters */}
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
-      {[
-        { value: 2, suffix: "", label: "States served" },
-        { value: 4, suffix: "", label: "Core locations" },
-        { value: 6, suffix: "", label: "Camera platforms" },
-        { value: 10, suffix: "", label: "Aerial service types" },
-      ].map((item, i) => (
-        <motion.div
-          key={item.label}
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: i * 0.1 }}
-          className="text-center p-3 sm:p-4 rounded-xl hover:bg-[#0284C7]/5 transition hover:scale-105"
-        >
-          <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0284C7]">
-            <AnimatedCounter value={item.value} suffix={item.suffix} inView={inView} />
-          </div>
-          <div className="text-black/50 text-[10px] sm:text-xs mt-1 uppercase tracking-wide">
-            {item.label}
-          </div>
-        </motion.div>
-      ))}
-    </div>
+    
+    
+    
+   
+
+
+
+
+
 
     {/* 🛡 Badge */}
     <motion.div

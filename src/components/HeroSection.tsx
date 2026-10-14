@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Compass } from "lucide-react";
-import heroVideo from "@/assets/hero-old.mp4";
+import heroVideo from "@/assets/doc11.mp4";
 import heroPoster from "@/assets/hero-drone.jpg";
 import type { ReactNode } from "react";
 
@@ -29,7 +29,7 @@ const HeroSection = ({ title, subtitle, video = heroVideo }: HeroSectionProps) =
         />
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-slate-950/30" />
+        <div className="absolute inset-0 bg-slate-950/10" />
 
         {/* Smooth gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/1 to-transparent" />

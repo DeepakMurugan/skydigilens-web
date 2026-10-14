@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import eventImg from "@/assets/services/a2.jpg";
-import liveImg from "@/assets/services/aa3.jpg";
-import realestateImg from "@/assets/services/aa1.jpg";
-import promoImg from "@/assets/services/p1.jpg";
-import inspectionImg from "@/assets/services/i2.jpg";
-import surveyImg from "@/assets/services/r1.jpg";
-import constructionImg from "@/assets/project-construction.jpg";
+import eventImg from "@/assets/services/ss6.jpeg";
+import liveImg from "@/assets/services/ss1.jpeg";
+import realestateImg from "@/assets/services/ss9.jpeg";
+import promoImg from "@/assets/services/ss4.jpeg";
+import inspectionImg from "@/assets/services/ss2.jpeg";
+import surveyImg from "@/assets/services/ss3.jpeg";
+import constructionImg from "@/assets/services/ss7.jpeg";
+import surveyImg2 from "@/assets/services/ss5.jpeg";
+import surveyImg3 from "@/assets/services/ss8.jpeg";
+
 import solarImg from "@/assets/project-industrial.jpg";
 
 const services = [
@@ -61,24 +64,24 @@ const services = [
     link: "/drone-construction-monitoring",
     id: "construction-monitoring",
   },
-  {
-    title: "Power Utility Pole & Line Inspection",
-    desc: "Aerial visual inspections of utility poles and lines to help teams document assets and identify visible issues.",
-    img: solarImg,
-    link: "/services#power-utility-inspection",
-    id: "power-utility-inspection",
-  },
+  // {
+  //   title: "Power Utility Pole & Line Inspection",
+  //   desc: "Aerial visual inspections of utility poles and lines to help teams document assets and identify visible issues.",
+  //   img: solarImg,
+  //   link: "/services#power-utility-inspection",
+  //   id: "power-utility-inspection",
+  // },
   {
     title: "Commercial Drone Approvals",
     desc: "Flight planning and documentation support for Digital Sky permissions and required NOCs in Hyderabad.",
-    img: surveyImg,
+    img: surveyImg2,
     link: "/contact-us",
     id: "commercial-drone-approvals",
   },
   {
     title: "Wedding Photography & Luxury Drone Services",
     desc: "Coordinate aerial photography for weddings, luxury celebrations and Telugu events, subject to venue conditions and required approvals.",
-    img: eventImg,
+    img: surveyImg3,
     link: "/services#event-photography",
     id: "luxury-drone-services",
   },

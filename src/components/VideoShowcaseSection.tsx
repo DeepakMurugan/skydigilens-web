@@ -1,59 +1,48 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import vd1 from "@/assets/vd1.mp4";
+import vd0 from "@/assets/doc11.mp4";
+
+import vd2 from "@/assets/vd2.mp4";
+import vd3 from "@/assets/vd3.mp4";
+import vd4 from "@/assets/va1.mp4";
+
 
 const videos = [
+    {
+    src: vd0,
+    title: "Aerial Drone Footage",
+    location: "SkyDigiLens",
+      category: "Aerial",
+  },
   {
-    src: "https://www.youtube.com/embed/CunMaIE3g9Q?autoplay=1&mute=1&loop=1&playlist=CunMaIE3g9Q&controls=0&modestbranding=1",
-    id: "CunMaIE3g9Q",
-    title: "Construction Monitoring ",
-    location: "Hyderabad",
+    src: vd1,
+    title: "Construction Drone Footage",
+    location: "SkyDigiLens",
     category: "Construction",
   },
   {
-    src: "https://www.youtube.com/embed/CWVtioYBg-w?autoplay=1&mute=1&loop=1&playlist=CWVtioYBg-w&controls=0&modestbranding=1",
-    id: "CWVtioYBg-w",
-    title: "Real Estate Drone Shoot",
-    location: "Hyderabad",
-    category: "Real Estate",
+    src: vd2,
+    title: "Wedding Drone Footage",
+    location: "SkyDigiLens",
+    category: "Wedding",
   },
   {
-    src: "https://www.youtube.com/embed/CunMaIE3g9Q?autoplay=1&mute=1&loop=1&playlist=CunMaIE3g9Q&controls=0&modestbranding=1",
-    id: "CunMaIE3g9Q",
-    title: "Wedding Aerial Coverage",
-    location: "Andhra Pradesh",
-    category: "Weddings",
+    src: vd3,
+    title: "Aerial Drone Footage",
+    location: "SkyDigiLens",
+    category: "Aerial",
   },
-  {
-    src: "https://www.youtube.com/embed/T2K77DxHURE?autoplay=1&mute=1&loop=1&playlist=T2K77DxHURE&controls=0&modestbranding=1",
-    title: "Live Drone Streaming",
-    location: "Hyderabad",
-    category: "Events",
-  },
-  {
-    src: "https://www.youtube.com/embed/CunMaIE3g9Q?autoplay=1&mute=1&loop=1&playlist=CunMaIE3g9Q&controls=0&modestbranding=1",
-    id: "CunMaIE3g9Q",
-    title: "Industrial Inspection",
-    location: "Telangana",
-    category: "Construction",
-  },
-  {
-    src: "https://www.youtube.com/embed/CWVtioYBg-w?autoplay=1&mute=1&loop=1&playlist=CWVtioYBg-w&controls=0&modestbranding=1",
-    id: "CWVtioYBg-w",
-    title: "Drone Mapping Survey",
-    location: "Andhra Pradesh",
-    category: "Real Estate",
-  },
-  {
-    src: "https://www.youtube.com/embed/CunMaIE3g9Q?autoplay=1&mute=1&loop=1&playlist=CunMaIE3g9Q&controls=0&modestbranding=1",
-    id: "CunMaIE3g9Q",
-    title: "Promotional Cinematic Shoot",
-    location: "Hyderabad",
-    category: "Weddings",
+    {
+    src: vd4,
+    title: "Drone Footage",
+    location: "SkyDigiLens",
+    category: "Aerial",
   },
 ];
 
-const categories = ["All", "Weddings", "Real Estate", "Construction"];
+const categories = ["All", "Wedding", "Construction", "Aerial"];
 
 const VideoShowcaseSection = () => {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -132,19 +121,23 @@ const VideoShowcaseSection = () => {
         </motion.div>
 
         {/* 🎥 MAIN VIDEO */}
-<div className="relative rounded-2xl sm:rounded-3xl overflow-hidden mb-5 sm:mb-8 aspect-video shadow-xl">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden mb-5 sm:mb-8 aspect-video shadow-xl">
           <AnimatePresence mode="wait">
-            <motion.iframe
-              key={activeIdx}
+            <motion.video
+              key={filteredVideos[activeIdx].src}
               src={filteredVideos[activeIdx].src}
-              title="Drone Video"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
+              title={filteredVideos[activeIdx].title}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
               initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-full h-full"
+              className="h-full w-full object-cover"
             />
           </AnimatePresence>
 
@@ -190,10 +183,13 @@ const VideoShowcaseSection = () => {
                     : "opacity-50 hover:opacity-90 hover:scale-105"
                 }`}
               >
-                <img
-                  src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
-                  alt={v.title}
-                  className="w-full h-full object-cover"
+                <video
+                  src={v.src}
+                  aria-label={v.title}
+                  muted
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full aspect-video object-cover"
                 />
 
                 <div className="absolute inset-0 bg-black/40" />

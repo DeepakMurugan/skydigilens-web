@@ -27,13 +27,13 @@ const FooterSection = () => {
           <div className="space-y-6">
             
             <div className="flex items-center">
-              <a href="/" className="inline-flex rounded-lg bg-white p-1.5" aria-label="SkyDigiLens home">
+              <a href="/" className="inline-flex" aria-label="SkyDigiLens home">
                 <img
-                  src="/skydigilens-logo-crop.png"
+                  src="/skydigilens-logo.png"
                   alt="SkyDigiLens"
-                  width={144}
-                  height={113}
-                  className="h-16 w-[82px] object-contain sm:h-[76px] sm:w-[96px]"
+                  width={240}
+                  height={96}
+                  className="h-auto w-[200px] object-contain sm:w-[240px]"
                 />
               </a>
             </div>

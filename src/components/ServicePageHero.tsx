@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight, MapPin } from "lucide-react";
 import type { ReactNode } from "react";
-import heroVideo from "@/assets/hero.mp4";
+import heroVideo from "@/assets/dr.mp4";
 
 interface ServicePageHeroProps {
   eyebrow: string;
