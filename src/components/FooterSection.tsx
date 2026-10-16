@@ -1,3 +1,6 @@
+import logoSky from "@/assets/logosky.png";
+
+
 const FooterSection = () => {
   return (
     <footer
@@ -29,11 +32,16 @@ const FooterSection = () => {
             <div className="flex items-center">
               <a href="/" className="inline-flex" aria-label="SkyDigiLens home">
                 <img
-                  src="/skydigilens-logo.png"
-                  alt="SkyDigiLens"
-                  width={240}
-                  height={96}
-                  className="h-auto w-[200px] object-contain sm:w-[240px]"
+                 src={logoSky}
+      alt="SkyDigiLens - Professional Drone Services"
+      width={240}
+      height={96}
+      loading="lazy"
+      decoding="async"
+      className="block h-auto w-40 object-contain sm:w-48 md:w-56"
+                
+                
+                
                 />
               </a>
             </div>
