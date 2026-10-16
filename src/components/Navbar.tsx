@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MapPin, ChevronDown, ArrowUpRight, Plane } from "lucide-react";
+import logoSky from "@/assets/logosky.png";
+
+
 
 // 1. IMPORT BOTH IMAGES HERE 👇
 const locationLinks = [
@@ -117,10 +120,14 @@ const Navbar = () => {
           {/* LOGO */}
           <a href="/" className="flex shrink-0 items-center" aria-label="SkyDigiLens home">
             <img
-              src="/skydigilens-logo.png"
-              alt="SkyDigiLens"
-              width={200}
-              height={80}
+           src={logoSky}
+      alt="SkyDigiLens - Professional Drone Services"
+      width={240}
+      height={96}
+      loading="lazy"
+      decoding="async"
+      // className="block h-auto w-40 object-contain sm:w-48 md:w-56"
+                
               className="h-10 w-[120px] object-contain sm:h-12 sm:w-[150px] lg:h-14 lg:w-[190px]"
             />
           </a>
