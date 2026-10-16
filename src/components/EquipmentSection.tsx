@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import matice4e from "@/assets/eq5.jpeg";
 import mavic4pro from "@/assets/d2.jpeg";
 import mavic3pro from "@/assets/eq2.jpeg";
-import air3 from "@/assets/eq4.jpeg";
+import air3 from "@/assets/eq4.png";
 import remote from "@/assets/eq3.jpeg";
 import air2s from "@/assets/eq1.jpeg";
 

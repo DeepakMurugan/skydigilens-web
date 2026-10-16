@@ -90,7 +90,7 @@ const AboutSection = () => {
               desc: "Aerial survey and mapping capture planned for land, construction and infrastructure project requirements.",
             },
             {
-              title: "DGCA-licensed event pilots",
+              title: "DGCA-licensed  pilots",
               desc: "Certified pilots and pre-flight planning for events, with operations subject to site conditions and required approvals.",
             },
             {
