@@ -67,13 +67,13 @@ const ContactPage = () => {
         </section>
         <section className="relative z-10 mx-auto -mt-8 grid max-w-5xl gap-4 px-4 sm:grid-cols-3 sm:px-6 lg:px-8">
           <a
-            href="mailto:hello@skydigilens.in"
+            href="mailto:skydigilens@gmail.com"
             className="glass-card flex items-center gap-4 p-5 transition hover:-translate-y-1"
           >
             <Mail className="shrink-0 text-primary" />
             <span>
               <span className="block font-semibold text-foreground">Email</span>
-              <span className="text-sm text-muted-foreground">hello@skydigilens.in</span>
+              <span className="text-sm text-muted-foreground">skydigilens@gmail.com</span>
             </span>
           </a>
           <div className="glass-card flex items-center gap-4 p-5">

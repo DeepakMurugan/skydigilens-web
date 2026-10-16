@@ -49,8 +49,8 @@ const FooterSection = () => {
             <p className="max-w-lg text-sm leading-relaxed text-slate-400">
               Professional aerial services for surveys, construction monitoring, solar inspections and cinematic productions across Telangana and Andhra Pradesh.
             </p>
-            <a href="mailto:hello@skydigilens.in" className="text-sm text-slate-300 transition hover:text-sky-300">
-              hello@skydigilens.in
+            <a href="mailto:skydigilens@gmail.com" className="text-sm text-slate-300 transition hover:text-sky-300">
+              skydigilens@gmail.com
             </a>
           </div>
 
@@ -124,13 +124,15 @@ const FooterSection = () => {
             <p>© {new Date().getFullYear()} SkyDigiLens. All rights reserved.</p>
             <p className="text-slate-500">Professional drone services. Flights subject to required approvals.</p>
           </div>
-          <a
-            href="https://dtechgrow.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Website developed by DTech Grow"
-            className="inline-flex w-fit max-w-full items-center justify-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2.5 text-center text-xs text-slate-400 transition hover:border-orange-400/50 hover:text-white sm:text-sm"
-          >
+        <a
+  href={`https://wa.me/919360744915?text=${encodeURIComponent(
+    "Hi im interested to create a Professional website for me"
+  )}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Create a professional website with DTech Grow on WhatsApp"
+  className="inline-flex w-fit max-w-full items-center justify-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2.5 text-center text-xs text-slate-400 transition hover:border-orange-400/50 hover:text-white sm:text-sm"
+>
             <span>Website developed by</span>
             <span className="font-semibold text-orange-300">DTech Grow</span>
             <span aria-hidden="true" className="text-orange-300">↗</span>

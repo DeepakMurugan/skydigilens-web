@@ -49,7 +49,7 @@ const FinalCTA = () => (
             Plan a drone mission <ArrowRight size={18} />
           </a>
           <a
-            href="mailto:hello@skydigilens.in"
+            href="mailto:skydigilens@gmail.com"
             className="inline-flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 font-semibold text-white/80 transition hover:border-white/30 hover:bg-white/10 hover:text-white"
           >
             <Mail size={17} /> Email the team
