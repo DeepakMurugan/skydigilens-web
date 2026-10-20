@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
   // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
   //   message
 
-  const username = "SkyDigilens_AerialServices";
+  const username = "skydigilens_aerialservices";
   const message = "Hi, I'm interested in SkyDigiLens drone services.";
 
   const whatsappUrl = `https://wa.me/${username}?text=${encodeURIComponent(
