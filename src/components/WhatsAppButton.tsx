@@ -3,12 +3,19 @@ import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "919704581339";
-  const message =
-    "Hi, I'm interested in SkyDigiLens drone services.";
+  // const phoneNumber = "919704581339";
+  // const message =
+  //   "Hi, I'm interested in SkyDigiLens drone services.";
 
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  //   message
+
+  const username = "skydigilens";
+  const message = "Hi, I'm interested in SkyDigiLens drone services.";
+
+  const whatsappUrl = `https://wa.me/${username}?text=${encodeURIComponent(
     message
+
   )}`;
 
   return (
