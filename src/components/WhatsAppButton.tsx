@@ -25,7 +25,7 @@ const SocialButtons = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 2.2, type: "spring" }}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] shadow-xl transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] shadow-xl transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-300"
         aria-label="Follow SkyDigiLens on Instagram"
         title="Follow us on Instagram"
       >
@@ -50,7 +50,7 @@ const SocialButtons = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 2, type: "spring" }}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-xl transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] shadow-xl transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300"
         aria-label="Chat with SkyDigiLens on WhatsApp"
         title="Chat with us on WhatsApp"
       >
